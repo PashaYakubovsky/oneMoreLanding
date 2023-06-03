@@ -3,17 +3,20 @@
         {
             "title": "Rápido",
             "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
-            "id": "card-1"
+            "id": "card-1",
+            "imageUrl": "/Target.png"
         },
         {
             "title": "Do seu jeito",
             "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
-            "id": "card-2"
+            "id": "card-2",
+            "imageUrl": "/EthereumCoin.png"
         },
         {
             "title": "Como você queria",
             "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
-            "id": "card-3"
+            "id": "card-3",
+            "imageUrl": "/CreditCard.png"
         }
     ]
 }

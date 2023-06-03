@@ -36,14 +36,6 @@
         drop-shadow(0 6px 5px rgba(255, 255, 255, 0.2))
         drop-shadow(0 12px 10px rgba(255, 255, 255, 0.1));
 }
-.shine {
-    background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #ff29c3 100%);
-    filter: blur(100px);
-    position: absolute;
-    top: -50%;
-    left: 0;
-    opacity: 0.2;
-}
 .bitCoinMan {
     position: absolute;
     left: -80px;

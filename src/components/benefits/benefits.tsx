@@ -1,24 +1,9 @@
 import CardsSlider from "../slider/cardsSlider";
 import style from "./benefits.module.scss";
-import { cards } from "../../lib/cards.json";
-import { useMemo } from "react";
+import json from "../../lib/cards.json";
 import { ICard } from "../slider/card";
 
 const Benefits = () => {
-    const _cards = useMemo(
-        () =>
-            cards.map((card, idx) => ({
-                ...card,
-                imageUrl:
-                    {
-                        [0]: "/Target.png",
-                        [1]: "/EthereumCoin.png",
-                        [2]: "/CreditCard.png",
-                    }[idx as 0 | 1 | 2] ?? "",
-            })),
-        []
-    ) as ICard[];
-
     return (
         <div className={style.benefitsWrap}>
             <div className={style.benefits}>
@@ -31,7 +16,7 @@ const Benefits = () => {
                 </div>
             </div>
 
-            <CardsSlider cards={_cards} />
+            <CardsSlider cards={json?.cards as ICard[]} />
         </div>
     );
 };

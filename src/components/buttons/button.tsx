@@ -1,16 +1,21 @@
-import { ButtonHTMLAttributes, ReactPropTypes } from "react";
 import style from "./button.module.scss";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
     primary?: boolean;
     text?: string;
+    className?: string;
 }
 
 const Button = (props: ButtonProps) => {
-    const { primary, text } = props;
+    const { primary, text, className } = props;
 
     return (
-        <button {...props} className={[style.button, primary ? style.buttonPrimary : ""].join(" ")}>
+        <button
+            className={[
+                style.button,
+                primary ? style.buttonPrimary : "",
+                className ? className : "",
+            ].join(" ")}>
             {text}
         </button>
     );
