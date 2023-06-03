@@ -1,0 +1,8 @@
+$headerHeight: 70px;
+.headerWrap {
+    position: sticky;
+    height: $headerHeight;
+}
+.headerDown {
+    top: -$headerHeight;
+}
