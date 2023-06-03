@@ -1,4 +1,3 @@
-@import "./variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 * {
@@ -14,17 +13,33 @@ body {
 }
 
 body {
-    color: $dark;
-    background: $light2;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark);
+    background: var(--light2);
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+a,
+path {
+    transition: 0.3s ease-in-out all;
+}
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
+:root {
+    --dark: #000;
+    --dark2: #363636;
+    --dark3: #8f8f8f;
+    --light: #fff;
+    --light2: #e5e5e5;
+    --yellow: #fbc508;
+    --purple: #7000ff;
+    --purple2: #2b0955;
+    --headerHeight: 70px;
+    --containerPadding: 0 8.2vw;
+    @media (max-width: 768px) {
+        --headerHeight: 100px;
+        --containerPadding: 20px;
     }
 }

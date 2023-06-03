@@ -1,8 +1,121 @@
-$headerHeight: 70px;
 .headerWrap {
-    position: sticky;
-    height: $headerHeight;
+    position: fixed;
+    height: var(--headerHeight);
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light);
+    padding: var(--containerPadding);
+    transition: 0.3s all ease-in-out;
 }
 .headerDown {
-    top: -$headerHeight;
+    top: -var(--headerHeight);
+}
+.logo {
+    cursor: pointer;
+    min-width: 85px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 100px;
+    padding-left: 255px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    &Mobile {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--light);
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 20px 0;
+        align-items: center;
+        text-align: start;
+    }
+    &Item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        &:hover {
+            color: var(--purple);
+        }
+    }
+}
+.messengers {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding-right: 10px;
+    &Item {
+        &:hover {
+            svg > path {
+                fill: var(--purple);
+            }
+        }
+    }
+}
+.hamburger {
+    width: 20px;
+    height: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    &Wrap {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+    &Item {
+        background-color: var(--dark);
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        &:first-child {
+            transform: rotate(0);
+        }
+        &:nth-child(2) {
+            transform: translateX(0);
+            background-color: var(--dark);
+            width: 70%;
+        }
+        &:last-child {
+            transform: rotate(0);
+        }
+    }
+    &Open {
+        .hamburgerItem {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: translateX(100%);
+                background-color: transparent;
+            }
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+        .navMobile {
+            display: none;
+        }
+    }
 }
