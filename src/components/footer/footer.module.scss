@@ -21,10 +21,12 @@
     &NavInner {
         color: var(--light);
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0;
-        padding-top: 80px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 0;
+            padding-top: 80px;
+        }
     }
     &Logo,
     &Messengers {

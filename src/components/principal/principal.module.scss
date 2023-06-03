@@ -54,8 +54,8 @@
     background-size: contain;
     z-index: 9;
     @media (max-width: 768px) {
-        left: 0;
-        top: 50px;
+        left: 40px;
+        top: -25px;
     }
 }
 .burgerShape {
@@ -73,8 +73,8 @@
         transform: translateX(-50px);
     }
     @media (max-width: 768px) {
-        left: 94px;
-        top: 110px;
+        left: 128px;
+        top: 35px;
     }
 }
 .content {
@@ -85,18 +85,19 @@
     @media (max-width: 768px) {
         padding-left: 0;
     }
-    &Header {
+    &Header > h1 {
         font-style: normal;
         font-weight: 800;
         font-size: 64px;
         line-height: 88px;
         color: var(--light);
         padding-bottom: 15px;
-        font-style: normal;
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             font-size: 48px;
             line-height: 137.5%;
         }
+        // @media (max-width: 768px) {
+        // }
     }
     &Description {
         font-style: normal;

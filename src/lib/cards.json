@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "title": "Rápido",
+            "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
+            "id": "card-1"
+        },
+        {
+            "title": "Do seu jeito",
+            "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
+            "id": "card-2"
+        },
+        {
+            "title": "Como você queria",
+            "description": "Aproveite esta seção para destacar os benefícios do seu produto ou serviço.",
+            "id": "card-3"
+        }
+    ]
+}

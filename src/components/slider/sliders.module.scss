@@ -1,0 +1,54 @@
+.slider {
+    &Wrap {
+        height: 500px;
+        background-color: var(--light);
+        padding: var(--containerMainPadding);
+        padding-top: 100px;
+        @media (max-width: 768px) {
+            & > div {
+                gap: 50px;
+            }
+        }
+    }
+    &Slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+.card {
+    background: var(--light);
+    box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    height: 306px;
+    width: 287px;
+    padding: 30px 35px;
+    padding-top: 120px;
+    &Image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        position: absolute;
+        top: -80px;
+        &:nth-child(1) {
+            width: 170px;
+            height: 180px;
+        }
+        &:nth-child(2) {
+            width: 211px;
+            height: 273px;
+        }
+        &:nth-child(3) {
+            width: 209px;
+            height: 195px;
+        }
+    }
+}

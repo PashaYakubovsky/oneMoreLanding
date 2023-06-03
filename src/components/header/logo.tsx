@@ -1,6 +1,6 @@
 import style from "./header.module.scss";
 
-const Logo = ({ className }: { className: String }) => {
+const Logo = ({ className }: { className?: String }) => {
     return (
         <svg
             className={[style.logo, className ?? ""].join(" ")}

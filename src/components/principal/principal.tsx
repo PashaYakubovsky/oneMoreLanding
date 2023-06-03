@@ -1,15 +1,17 @@
 import Button from "../buttons/button";
 import style from "./principal.module.scss";
-import Image from "next/image";
-import bitCoinMan from "../../../public/businessmanInvestingBitcoin.png";
-import burgerShape from "../../../public/burgerShape.png";
+// import Image from "next/image";
+// import bitCoinMan from "../../../public/businessmanInvestingBitcoin.png";
+// import burgerShape from "../../../public/burgerShape.png";
 import GooBlobsAnimation from "./gooBlobsAnimation";
 
 const Principal = () => {
     return (
         <div id="principal" className={style.principalWrap}>
             <ul className={style.content}>
-                <li className={style.contentHeader}>Um slogan chamativo aqui.</li>
+                <li className={style.contentHeader}>
+                    <h1>Um slogan chamativo aqui.</h1>
+                </li>
                 <li className={style.contentDescription}>
                     Um texto sobre o seu produto ou serviço. Explique{" "}
                     <b className={style.contentDescriptionYellow}>porque ele é valioso</b> e
