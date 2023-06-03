@@ -1,0 +1,35 @@
+@import "../../styles/mixins.scss";
+.input {
+    background-color: transparent;
+    color: var(--light);
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    &Wrap {
+        width: 365px;
+        height: 45px;
+        border: 1px solid var(--light);
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    &Button {
+        width: 122px;
+        height: 100%;
+        outline: none;
+        border: none;
+        background-color: var(--light);
+        color: var(--purple2);
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        transition: 0.3s ease-in-out background-color, 0.3s ease-in-out box-shadow;
+        @include glowElement();
+        @media (max-width: 768px) {
+            width: 100px;
+        }
+    }
+}

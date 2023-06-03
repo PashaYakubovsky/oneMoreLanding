@@ -37,12 +37,15 @@ path {
     --yellow: #fbc508;
     --purple: #7000ff;
     --purple2: #2b0955;
+    --purple3: #ae97cb;
     --headerHeight: 70px;
     --containerPadding: 0 8.2vw;
     --containerMainPadding: 0 14vw;
+    --footerHeight: 330px;
     @media (max-width: 768px) {
         --headerHeight: 100px;
         --containerPadding: 0 20px;
         --containerMainPadding: 0 15px 0 30px;
+        --footerHeight: 595px;
     }
 }

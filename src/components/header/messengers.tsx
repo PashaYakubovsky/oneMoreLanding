@@ -1,9 +1,9 @@
 import Link from "next/link";
 import style from "./header.module.scss";
 
-const Messengers = () => {
+const Messengers = ({ className }: { className?: string }) => {
     return (
-        <ul className={style.messengers}>
+        <ul className={[style.messengers, className ?? ""].join(" ")}>
             <li className={style.messengersItem}>
                 <Link
                     target="blanc"

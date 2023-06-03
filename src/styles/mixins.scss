@@ -1,0 +1,11 @@
+@mixin glowElement(
+    $color1: rgb(255, 238, 0),
+    $color2: rgba(255, 230, 0, 0.8),
+    $color3: rgba(255, 230, 0, 0.6)
+) {
+    transition: 0.3s ease-in-out background-color, 0.3s ease-in-out box-shadow;
+    &:hover {
+        background-color: $color1;
+        box-shadow: 0 0 20px $color2, 0 0 30px $color3;
+    }
+}

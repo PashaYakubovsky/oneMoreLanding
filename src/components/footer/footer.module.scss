@@ -1,0 +1,80 @@
+.footer {
+    height: var(--footerHeight);
+    background-color: var(--purple2);
+    padding: var(--containerMainPadding);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    position: relative;
+    z-index: 11;
+
+    &Nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    &NavInner {
+        color: var(--light);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 80px;
+    }
+    &Logo,
+    &Messengers {
+        path {
+            fill: var(--light);
+        }
+    }
+    &Messengers {
+        @media (max-width: 768px) {
+            position: absolute;
+            right: 30px;
+            top: 160px;
+        }
+    }
+}
+.subscription {
+    &Wrap {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid var(--purple3);
+        padding-top: 72px;
+        @media (max-width: 768px) {
+            padding-top: 50px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+    &Caption {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--light);
+    }
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: var(--light);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
