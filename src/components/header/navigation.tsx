@@ -41,7 +41,7 @@ const Navigation = ({ className, open }: NavigationProps) => {
             item && (
                 <animated.ul style={styles} className={[style.nav, className ?? ""].join(" ")}>
                     <li className={style.navItem}>
-                        <Link href="#main" className={style.navItemLink}>
+                        <Link href="#principal" className={style.navItemLink}>
                             o que fazemos
                         </Link>
                     </li>

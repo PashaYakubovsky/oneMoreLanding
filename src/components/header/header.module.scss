@@ -10,9 +10,11 @@
     background-color: var(--light);
     padding: var(--containerPadding);
     transition: 0.3s all ease-in-out;
+    z-index: 11;
+    gap: 20px;
 }
 .headerDown {
-    top: -var(--headerHeight);
+    top: calc(var(--headerHeight) * -1);
 }
 .logo {
     cursor: pointer;
@@ -23,8 +25,8 @@
     align-items: center;
     justify-content: flex-start;
     list-style: none;
-    gap: 100px;
-    padding-left: 255px;
+    gap: 5vw;
+    padding-left: 10vw;
     @media (max-width: 768px) {
         display: none;
     }
@@ -47,6 +49,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
+        white-space: nowrap;
         &:hover {
             color: var(--purple);
         }

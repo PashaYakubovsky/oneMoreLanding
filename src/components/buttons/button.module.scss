@@ -1,0 +1,29 @@
+$buttonHeight: 45px;
+$buttonWidth: 185px;
+.button {
+    background-color: transparent;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    min-height: $buttonHeight;
+    min-width: $buttonWidth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light);
+    transition: 0.3s ease-in-out background-color, 0.3s ease-in-out box-shadow;
+    &:hover {
+        background-color: rgb(255, 238, 0);
+        box-shadow: 0 0 20px rgba(255, 230, 0, 0.8), 0 0 30px rgba(255, 230, 0, 0.6);
+    }
+
+    &Primary {
+        background-color: var(--yellow);
+        border: 1px solid var(--yellow);
+        color: var(--purple2);
+    }
+}

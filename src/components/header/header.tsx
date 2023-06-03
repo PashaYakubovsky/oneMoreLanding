@@ -5,11 +5,9 @@ import Logo from "./logo";
 import Messengers from "./messengers";
 import Navigation from "./navigation";
 import { Hamburger } from "./hamburger";
-import { useState } from "react";
 
 const Header = () => {
     const scrollDirection = useScrollDirection();
-    const [mobileNavOpen, changeMobileNavOpen] = useState(false);
 
     return (
         <header

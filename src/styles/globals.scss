@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--dark);
     background: var(--light2);
+    background-color: var(--dark);
 }
 
 a {
@@ -38,8 +39,10 @@ path {
     --purple2: #2b0955;
     --headerHeight: 70px;
     --containerPadding: 0 8.2vw;
+    --containerMainPadding: 0 14vw;
     @media (max-width: 768px) {
         --headerHeight: 100px;
-        --containerPadding: 20px;
+        --containerPadding: 0 20px;
+        --containerMainPadding: 0 15px 0 30px;
     }
 }
